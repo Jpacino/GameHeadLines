@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_contest_detail_main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/write"
+    tools:context="com.a15w.gameheadlines.ui.ContestDtailActivity">
+
+    <include
+        android:id="@+id/share_toolbar"
+        layout="@layout/share_toolbar_layout" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/activity_contest_detail_rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/share_toolbar"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/activity_contest_detail_team1_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/activity_contest_detail_team1_logo_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/activity_contest_detail_team1_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/activity_contest_detail_team1_logo_iv"
+                            android:layout_centerHorizontal="true"
+                            android:text="队伍一" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/activity_contest_detail_score_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0:0"
+                        android:textSize="18dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/activity_contest_detail_team2_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/activity_contest_detail_team2_logo_iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/activity_contest_detail_team2_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/activity_contest_detail_team2_logo_iv"
+                            android:layout_centerHorizontal="true"
+                            android:text="队伍二" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/activity_contest_detail_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/activity_contest_detail_team1_rl"
+                        android:layout_centerHorizontal="true"
+                        android:text="时间"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout xmlns:sus="http://schemas.android.com/apk/res/com.a15w.gameheadlines"
+                    android:id="@+id/activity_contest_detail_progress_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_contest_detail_rl1"
+                    android:orientation="horizontal">
+
+                    <com.a15w.gameheadlines.ui.RatioProgress
+                        android:id="@+id/left_ratio_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="10dp"
+                        sus:direction="left"
+                        sus:progressColor="@color/toolbar_red" />
+
+                    <com.a15w.gameheadlines.ui.RatioProgress
+                        android:id="@+id/right_ratio_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        sus:direction="right"
+                        sus:progressColor="@color/team_blue" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_contest_detail_rl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/activity_contest_detail_rl1"
+                    android:layout_below="@id/activity_contest_detail_progress_ll"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/activity_contest_detail_team1_like_iv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:src="@drawable/preview_unlike_icon_highlighted" />
+
+                    <TextView
+                        android:id="@+id/activity_contest_detail_team1_like_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_contest_detail_team1_like_iv"
+                        android:layout_centerHorizontal="true"
+                        android:text="0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_contest_detail_rl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/activity_contest_detail_rl1"
+                    android:layout_below="@id/activity_contest_detail_progress_ll"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/activity_contest_detail_team2_like_iv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:src="@drawable/preview_unlike_icon_highlighted2" />
+
+                    <TextView
+                        android:id="@+id/activity_contest_detail_team2_like_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_contest_detail_team2_like_iv"
+                        android:layout_centerHorizontal="true"
+                        android:text="0" />
+
+                </RelativeLayout>
+            <RadioGroup
+                android:id="@+id/activity_contest_detail_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/activity_contest_detail_rl2"
+                android:background="@color/groupView_bg_gray"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/activity_contest_detail_video_rb"
+                    android:checked="true"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@drawable/selector_rb2_text"
+                    android:text="视频"/>
+                <RadioButton
+                    android:id="@+id/activity_contest_detail_news_rb"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@drawable/selector_rb2_text"
+                    android:text="新闻"/>
+
+
+            </RadioGroup>
+            <FrameLayout
+                android:id="@+id/activity_contest_detail_fl"
+                android:layout_below="@id/activity_contest_detail_radioGroup"
+                android:layout_above="@+id/activity_contest_detail_rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+    <RelativeLayout
+        android:id="@id/activity_contest_detail_rl4"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:layout_toLeftOf="@+id/activity_contest_detail_discuss_iv"
+            android:paddingLeft="20dp"
+            android:hint="写评论..."
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@id/activity_contest_detail_discuss_iv"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_comment"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</LinearLayout>

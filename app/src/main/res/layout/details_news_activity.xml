@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_red"
+        android:padding="5dp"
+        >
+        <ImageButton
+            android:id="@+id/detais_news_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/selector_detais_back_btn"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            />
+        <ImageButton
+            android:id="@+id/detais_news_share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/selector_detais_share_btn"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/details_news_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="LOL月活跃用户目前已破亿"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/details_news_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="09-14 09:44 腾讯"/>
+    <WebView
+        android:id="@+id/details_news_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

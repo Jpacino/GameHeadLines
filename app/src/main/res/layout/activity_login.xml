@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.a15w.gameheadlines.ui.LoginActivity">
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/share_toolbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/login_activity_password_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/login_toolbar"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名、邮箱或手机号"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/me_ic_name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/me_login_ic_password" />
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/write"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="18dp"
+            android:text="登录"/>
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/write"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="18dp"
+            android:text="注册"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

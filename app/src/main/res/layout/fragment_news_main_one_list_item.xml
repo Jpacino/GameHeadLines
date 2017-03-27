@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/news_main_one_list_item_big_iv"
+        android:layout_margin="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+    <TextView
+        android:id="@+id/news_main_one_list_item_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/news_main_one_list_item_big_iv"
+        android:layout_alignParentTop="true"
+        android:text="英雄联盟搞笑时刻：这猴子到底要往哪走！"
+        />
+    <TextView
+        android:id="@+id/news_main_one_list_item_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="5分钟后"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

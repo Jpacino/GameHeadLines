@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.a15w.gameheadlines.WelcomeActivity">
+
+
+   <ImageView
+       android:id="@+id/welcome_activity_main_iv"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+       android:src="@drawable/splash_default"
+       android:layout_above="@+id/welcome_activity_bottom_iv_ll"
+       />
+    <Button
+        android:id="@+id/welcome_activity_skip_btn"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:onClick="click"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_welcome_skip"/>
+    <RelativeLayout
+        android:id="@id/welcome_activity_bottom_iv_ll"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/splash_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

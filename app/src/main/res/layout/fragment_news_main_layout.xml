@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/main_toolbar_layout"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_news_main_tablayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            >
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="最头条"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="看比赛"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="八卦志"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="原创团"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="独家访谈"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="超神学院"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="产业杂谈"/>-->
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="COSPLAY"/>-->
+        </android.support.design.widget.TabLayout>
+<android.support.v4.view.ViewPager
+    android:id="@+id/fragment_news_main_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_default"
+    />
+</LinearLayout>

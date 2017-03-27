@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a15w.gameheadlines">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.AdActivity" />
+        <activity android:name=".ui.ContestDtailActivity" />
+        <activity android:name=".ui.NewsDetailsActivity" />
+        <activity android:name=".ui.VideoDetailsActivity" />
+        <activity android:name=".ui.ContestDetailVideoActivity" />
+        <activity android:name=".ui.DiscussActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.AboutActivity" />
+        <activity android:name=".ui.IdealActivity" />
+        <activity android:name=".ui.ActActivity"></activity>
+    </application>
+
+</manifest>
